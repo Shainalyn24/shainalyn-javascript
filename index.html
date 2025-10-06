@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat-Style Contact App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>📒 Chat-Style Contact App</h1>
+      <p>Local Storage Based Web App</p>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <form id="entryForm" autocomplete="off">
+          <div class="input-group">
+            <input id="name" type="text" placeholder="Name *" required>
+            <input id="email" type="email" placeholder="Email *" required>
+            <input id="age" type="number" placeholder="Age *" min="18" required>
+          </div>
+
+          <div class="input-group">
+            <select id="gender">
+              <option value="">Select Gender</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+            </select>
+            <textarea id="notes" placeholder="Notes..."></textarea>
+          </div>
+
+          <div class="buttons">
+            <button type="submit" id="submitBtn">Add Entry</button>
+            <button type="button" id="clearForm" class="ghost">Reset</button>
+            <button type="button" id="clearAll" class="danger">Clear All</button>
+          </div>
+          <p id="formError" class="error"></p>
+        </form>
+      </section>
+
+      <section class="search-bar">
+        <input id="search" type="text" placeholder="Search by name, email, or notes...">
+        <span>Total: <b id="count">0</b></span>
+      </section>
+
+      <section class="data-display">
+        <table id="entriesTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Notes</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built by <b>Shainalyn’s Team</b> | JS Mini Project 💻</p>
+    </footer>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
