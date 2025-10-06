@@ -15,3 +15,4 @@
 🎨 Chat-Style Design – Simple and modern interface inspired by chat applications.
 
 📱 Responsive Layout – Works smoothly on both desktop and mobile screens.
+
